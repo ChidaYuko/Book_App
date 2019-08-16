@@ -9,6 +9,18 @@
   </head>
 
   <body>
+    <!-- ヘッダー -->
+    <header>
+      <h1><%= link_to '本を読んで記録するアプリ', root_path %></h1>
+      <ul>
+        <li><%= link_to 'TOP', root_path %></li>
+        <li><%= link_to '新しい本のデータの作成', books_new_path %></li>
+        <li>本を検索</li>
+        <li>ログイン</li>
+        <li>新規ユーザー</li>
+      </ul>
+    </header>
+    <!-- ヘッダー終わり -->
     <%= yield %>
   </body>
 </html>

@@ -13,3 +13,16 @@
  *= require_tree .
  *= require_self
  */
+
+ header {
+   height: 100px;
+ }
+ header h1 {
+   float: left;
+ }
+ header ul{
+   float: right;
+ }
+ header ul li{
+   display: inline;
+ }
