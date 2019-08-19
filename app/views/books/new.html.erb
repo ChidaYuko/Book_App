@@ -1,0 +1,21 @@
+<h1>新しい本</h1>
+<%= form_for(@book, url: books_new_path) do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <br>
+  <%= f.label :author %>
+  <%= f.text_field :author %>
+  <br>
+  <%= f.label :publicationYear %>
+  <%= f.number_field :publicationYear %>
+  <br>
+  <%= f.label :rentalHakata %>
+  <%= f.check_box :rentalHakata %>
+  <br>
+  <!--
+  <%= f.label :photo %>
+  <%= f.file_field :photo %>
+  -->
+
+  <%= f.submit "新しい本のデータの作成" %>
+<% end %>

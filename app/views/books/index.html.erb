@@ -1,0 +1,5 @@
+<% @books.each do |book| %>
+  <%= image_tag book.photo %>
+  <h3><%= link_to book.title, "books/show/#{book.id}" %></h3>
+<br>
+<% end %>
